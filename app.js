@@ -13,15 +13,10 @@ let tentativas = 1;
         break;
     } 
     //Se o chute não for igual o número secreto:
-    else {
-        if(chute < numeroSecreto) {
-            alert(`O número secreto é maior que ${chute}`);
-        } else {
-            alert(`O número secreto é menor que ${chute}`);
-        }
-        tentativas++;
+    let condicao = chute < numeroSecreto ? 'maior' : 'menor'
+    alert(`O número secreto é ${condicao} que ${chute}`);
+    tentativas++;
     }
- }
 
  let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
  alert(`Muito bem! Você descobriu o número secreto (${numeroSecreto}) com ${tentativas} ${palavraTentativa}!`);

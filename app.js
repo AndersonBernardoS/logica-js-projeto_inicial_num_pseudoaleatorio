@@ -12,7 +12,7 @@ let tentativas = 1;
     if (numeroSecreto == chute) {
         break;
     } 
-    //Se o chute não for igual o número secreto:
+    //Condição de chute maior ou menor que o número sorteado:
     let condicao = chute < numeroSecreto ? 'maior' : 'menor'
     alert(`O número secreto é ${condicao} que ${chute}`);
     tentativas++;
